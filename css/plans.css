@@ -1,0 +1,837 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* header-section-start
+  ------------------------*/
+.headerWrapper {
+  width: 100%;
+}
+
+.headerWrapper {
+  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+}
+
+.headingWrap-menu {
+  width: 100%;
+}
+
+.mobileView {
+  display: block !important;
+}
+
+.headingWrap-menu {
+  display: flex;
+}
+
+.headingSection1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: auto 0;
+}
+
+.headingWrap-menu .logo {
+  flex: 0 0 20%;
+}
+
+.logoImage {
+  width: 230px;
+  margin-left: 10px;
+}
+
+.headTryNow button {
+  border-radius: 0.8vh !important;
+}
+
+.buttonTheme2 {
+  background: #fff;
+  font-size: 16px;
+  color: #f47d31;
+  display: inline-block;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  padding: 10px 25px;
+  border: 1px solid #f47d31 !important;
+  text-align: center;
+}
+
+.sidenav-container {
+  display: none;
+}
+
+.closeSideNav {
+  display: none !important;
+}
+.sidenav-plate {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 230px;
+  top: 0;
+  right: 0;
+  background-color: #070245;
+  z-index: 999;
+}
+
+.sidenav-menuHolder {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidenav-menuHolder {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.sidenav-menuHolder ul {
+  list-style: none;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.sidenav-menuHolder ul li {
+  margin-top: 30px;
+}
+
+.mobile-menu-li ul li {
+  margin-top: 30px;
+}
+
+.sidenav-menuHolder ul li a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.socialMediaContainer {
+  margin-bottom: 20vh;
+}
+
+.socialMediaContainer p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.socialMediaIconsHolder {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.socialMediaIconsHolder a {
+  text-decoration: none !important;
+  color: #fff !important;
+  font-size: 20px;
+}
+
+.menuHolder {
+  margin-left: 2%;
+}
+
+.menuHolder {
+  margin-top: 10px;
+  flex: 1;
+}
+
+.menuHolder ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menuHolder .list li {
+  padding: 0 10px;
+}
+
+.menuHolder ul li {
+  list-style: none;
+  padding: 0 0.5rem;
+  text-decoration: none;
+}
+
+.menuHolder .list li a {
+  font: 12px;
+}
+
+.menuHolder ul li a {
+  color: #000;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menuHolder ul li a:hover {
+  color: #f47d31;
+  text-decoration: none;
+}
+
+.pcView {
+  display: flex !important;
+}
+
+.headingWrap-menu {
+  width: 100%;
+}
+.headingWrap-menu {
+  display: flex;
+}
+
+.logo {
+  margin: auto 0;
+}
+
+.headingWrap-menu .logo {
+  flex: 0 0 20%;
+}
+
+.logoImage {
+  width: 230px;
+  margin-left: 10px;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.loginButton {
+  color: #fff !important;
+}
+
+.buttonTheme1 {
+  background: #f47d31;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  padding: 10px 25px;
+  border: 1px solid #f47d31;
+  text-align: center;
+}
+
+.menuHolder .list li {
+  padding: 0 10px;
+}
+
+#sidenav-button,
+#sidenav-x-button {
+  font-size: 29px;
+  color: #f47d31;
+}
+.mobile-menu-x {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.headTryNow {
+  display: none;
+}
+/* header-section-responsiveness with media query
+    -------------------------------------------------- */
+/* header-section for tablet */
+@media only screen and (max-width: 991px) and (min-width: 601px) {
+  .headerWrapper {
+    padding: 10px 0;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  .headingWrap-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .menuHolder {
+    display: none;
+  }
+  .sidenav-container {
+    display: block;
+  }
+  .headTryNow {
+    display: block;
+    margin-left: auto;
+    margin-right: 54px;
+  }
+  .headTryNow button {
+    border-radius: 0.8vh !important;
+  }
+  .headTryNow .buttonTheme2 {
+    font-size: 14px;
+    padding: 5px 16px;
+  }
+}
+
+/* header-section for mobile */
+@media only screen and (max-width: 600px) {
+  .headerWrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    z-index: 5;
+  }
+  .logoImage {
+    width: 200px;
+    padding-left: 10px;
+  }
+  .headerWrapper {
+    padding: 10px 0;
+  }
+  .headingWrap-menu {
+    margin-right: 10px;
+  }
+
+  .menuHolder {
+    display: none;
+  }
+  .sidenav-container {
+    display: block;
+  }
+  .headingWrap-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .headTryNow {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .headTryNow .buttonTheme2 {
+    font-size: 14px;
+    padding: 5px 16px;
+  }
+}
+/* header-section-end
+    ----------------------*/
+
+/* app-general-counseling-section
+----------------------------------- */
+.topMenuMargin {
+  margin-top: 0;
+}
+.navigationSection {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  align-items: center;
+}
+.navigationSection button {
+  font-size: 12px;
+  padding: 5px 20px;
+  border: none !important;
+}
+.secondaryHeading {
+  width: 100%;
+  text-align: center;
+}
+.secondaryHeading h2 {
+  color: #021744;
+  font-size: 36px;
+  margin: 0;
+  line-height: 1.5em;
+}
+.secondaryHeading hr {
+  border-top: 2px solid #fd7d31;
+  max-width: 100px;
+}
+hr {
+  margin: 1rem auto;
+  background-color: transparent;
+  border: 0;
+  opacity: 100;
+}
+.secondaryHeading p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #000d30;
+}
+.planBoxWrap {
+  padding: 50px 0 0;
+}
+.planBox {
+  height: 100%;
+  position: relative;
+}
+.planContWrap {
+  position: relative;
+  height: 100%;
+}
+.planContWrap {
+  box-shadow: 0 5px 10px rgb(93 112 223 / 24%);
+  border: 3px solid #ebebeb;
+  border-radius: 10px;
+  padding: 25px 25px 40px;
+  text-align: center;
+}
+.recommendedTag {
+  height: 35px;
+  top: 10px;
+  margin-bottom: 5px;
+  z-index: 2;
+  position: absolute;
+  right: -20px;
+}
+.planIcon {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.planConts {
+  color: #01091f;
+  margin-bottom: 40px;
+}
+.planConts h2 {
+  font-size: 24px;
+  line-height: 35px;
+  margin: 0 0 19px;
+  color: #f47d31;
+  font-weight: 500;
+}
+.planConts h5 {
+  font-size: 20px;
+  color: #01091f;
+  margin: 0 0 7px;
+}
+.iconsHolder img {
+  width: 20%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.planConts p {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 5px;
+}
+.planConts h3 {
+  font-size: 20px;
+  line-height: 35px;
+  margin: 0 0 5px;
+  color: #f47d31;
+}
+.planPrice h2 {
+  font-size: 38px;
+  line-height: 57px;
+  margin: 0;
+  color: #07006e;
+}
+.planPrice p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.planBuy {
+  position: absolute;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+.buttonTheme1 {
+  background: #f47d31;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  padding: 10px 25px;
+  border: 1px solid #f47d31;
+  text-align: center;
+}
+.plansTip {
+  padding: 70px 0 20px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 780px;
+  color: #000d30;
+  line-height: 40px;
+}
+.faqHolder {
+  padding: 50px;
+}
+.faqHeading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.flip-card {
+  background-color: transparent;
+  width: auto;
+  height: 240px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.flip-card-front {
+  background-color: #fff2ea;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.flip-card-back,
+.flip-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-inner:hover {
+    transform: rotateY(180deg); 
+}
+.flip-card-back {
+  background-color: #f1f0f6;
+  transform: rotateY(180deg);
+  padding: 10px;
+}
+.flip-card-back p {
+  margin-bottom: 0;
+}
+
+/* app-general-counseling-section responsiveness with media query
+  --------------------------------------------------------------- */
+/* app-general-counseling-section for tablet device*/
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .topMenuMargin {
+        margin-top: 66px;
+    } 
+    .secondaryHeading {
+        margin-top: 75px;
+    }
+    .planBoxWrap {
+        padding-top: 60px;
+    }
+    .flip-card, .planRes {
+        margin-bottom: 30px;
+    }
+    .buttonTheme1, .buttonTheme2 {
+        border-radius: 25px;
+        padding: 5px 16px;
+    }
+    .buttonTheme1 {
+        font-size: 16px;
+    }
+    .plansTip {
+        font-size: 18px;
+        line-height: 1.7em;
+        padding-top: 50px;
+    }
+    .faqHolder {
+        padding: 40px 20px 20px;
+    }
+    .flip-card, .planRes {
+        margin-bottom: 30px;
+    }
+    .flip-card-back {
+        font-size: 14px;
+    }
+
+}
+
+/* app-general-counseling-section for mobile device */
+@media only screen and (max-width: 600px) {
+    .topMenuMargin {
+        margin-top: 66px;
+    }
+    .secondaryHeading {
+        margin-top: 20px;
+    }
+    .secondaryHeading h2 {
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+    .secondaryHeading p {
+        font-size: 14px;
+        line-height: 1.5em;
+        margin: 0 12px 12px;
+    }
+    .planBoxWrap {
+        padding-top: 0;
+    }
+    
+    .planRes {
+        margin-right: 2px;
+    }  
+    .flip-card, .planRes {
+        margin-bottom: 30px;
+    }
+    .planContWrap {
+        height: auto;
+        margin-top: 40px;
+    } 
+    .recommendedTag {
+        height: 30px;
+        right: -14px;
+    }
+    .planIcon {
+        height: 100px;
+    }
+    .planIcon .img-fluid {
+        height: 80px;
+    }
+    .planConts {
+        margin: 0 0 20px;
+    }
+    .planConts h2 {
+        font-size: 19px;
+        margin: 0;
+    }
+    .planConts h5 {
+        font-size: 17px;
+        margin: 0 0 8px;
+    }
+    .planConts p {
+        font-size: 14px;
+    }
+    .planConts h3 {
+        font-size: 17px;
+        margin: 0;
+    }
+    .planPrice h2 {
+        font-size: 25px;
+    }
+    .planPrice p {
+        margin: 0;
+        font-size: 12px;
+    }
+    .planBuy a {
+        width: 120px 
+    ;
+    }
+    .buttonTheme1 {
+        font-size: 14px;
+    }
+    .buttonTheme1, .buttonTheme2 {
+        border-radius: 25px;
+        padding: 5px 16px;
+    }
+    .plansTip {
+        font-size: 15px;
+        line-height: 1.7em;
+        padding-top: 50px
+    }
+    .faqHolder {
+        padding: 20px;
+    }
+    .faqHeading h2 {
+        font-size: 17px;
+        margin: 0;
+    }
+    .flip-card {
+        height: 160px;
+        margin: 15px;
+    }
+    .flip-card-inner {
+        height: 150px;
+    }
+    .flip-card-back {
+        font-size: 13px;
+    }
+
+
+}
+
+
+/* footer-section
+------------------- */
+.footerWrap {
+  background: #07006e;
+  padding: 100px 0 50px;
+  color: #fff;
+  font-weight: 500;
+}
+.top-center {
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1rem;
+}
+.bootstrap-alert {
+  z-index: 2000;
+  position: fixed;
+}
+.footerCont {
+  max-width: 278px;
+}
+
+.contactInfo {
+  margin-top: 15px;
+}
+.contactInfo li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+.contactInfo li i {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.phoneCssFix a {
+  text-decoration: underline;
+  color: #fff;
+}
+.socialIconCont li {
+  display: inline-block;
+  padding-right: 10px;
+}
+.socialIconCont li a {
+  font-size: 21px;
+  color: #fff;
+}
+.quickLinkBox h3 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.quickLinkBox ul {
+  padding-inline-start: 0;
+}
+.quickLinkBox ul li {
+  padding-bottom: 8px;
+  list-style: none;
+}
+.quickLinkBox ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.callbackBox h3 {
+  font-size: 20px;
+  margin: 0 0 19px;
+}
+.callbackInput input {
+  background: #f6f6f6;
+  font-size: 14px;
+  height: 50px;
+  padding: 10px 25px;
+  margin-bottom: 17px;
+}
+.callbackInput .primaryBtn:hover {
+  padding: 1.2vh 3.2vh;
+  border-radius: 0.8vh;
+  background: #2b1eeb;
+  font-size: 2.4vh;
+  display: inline-block;
+  color: #fff;
+}
+
+.footerWarningBox {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  background: #07006e;
+  padding-bottom: 35px;
+  color: #fff;
+}
+.footerWarningBox a {
+  color: #f47d31;
+}
+
+.primaryBtn {
+  padding: 1.2vh 3.2vh;
+  border-radius: 0.8vh;
+  background: #f68a40;
+  font-size: 2.4vh;
+  display: inline-block;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* footer section responsiveness with media query
+  ---------------------------------------------------- */
+/* footer-section for tablet */
+@media only screen and (max-width: 991px) and (min-width: 601px) {
+  .footerWarningBox hr {
+    display: none !important;
+    margin: 0;
+    background-color: #fff;
+  }
+  .callbackInput .primaryBtn {
+    font-size: 1.6vh;
+    padding: 1vh 2vh;
+  }
+}
+
+/* footer section for mobile */
+@media only screen and (max-width: 600px) {
+  .footerWarningBox hr {
+    display: none !important;
+    margin: 0;
+    background-color: #07006e;
+  }
+  .quickLinkBox h3 {
+    margin: 12px 0;
+    font-size: 17px;
+  }
+  .callbackInput {
+    text-align: center;
+  }
+  .primaryBtn {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .primaryBtn:hover {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .footerWarningBox .container {
+    font-size: 12px;
+    padding: 40px 10px 60px;
+  }
+}
